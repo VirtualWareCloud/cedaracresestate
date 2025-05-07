@@ -7,6 +7,9 @@
   <meta name="keywords" content="Fourways apartments for sale, Cedar Acres Fourways property, 3 bedroom apartment Fourways, luxury apartments Sandton">
   <meta name="author" content="Desiree Bedhasie">
   <title>Cedar Acres Fourways | 3 Bed Apartment For Sale</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
   <style>
     body {
       font-family: 'Open Sans', sans-serif;
@@ -14,12 +17,20 @@
       margin: 0;
       padding: 0;
       color: #333333;
+      line-height: 1.6;
     }
     header {
       background-color: #1a1a1a;
       color: #d4af37;
       padding: 20px;
       text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+    }
+    header p {
+      margin: 5px 0 0;
     }
     .hero {
       background: url('main-image.jpg') no-repeat center center/cover;
@@ -36,6 +47,8 @@
       color: #ffffff;
       font-size: 2rem;
       font-weight: bold;
+      text-align: center;
+      padding: 10px;
     }
     .container {
       padding: 30px;
@@ -49,16 +62,24 @@
       list-style: none;
       padding: 0;
     }
+    .features li {
+      margin-bottom: 10px;
+    }
     .features li::before {
       content: '\2713';
       color: #d4af37;
       margin-right: 10px;
+      font-weight: bold;
     }
     .gallery img {
       width: 100%;
       margin-bottom: 20px;
       border: 5px solid #d4af37;
       border-radius: 8px;
+    }
+    .gallery img[alt] {
+      display: block;
+      margin: 0 auto;
     }
     .buttons a {
       display: inline-block;
@@ -69,6 +90,10 @@
       text-decoration: none;
       font-weight: bold;
       border-radius: 5px;
+      transition: background-color 0.3s ease;
+    }
+    .buttons a:hover {
+      background-color: #b08f2c;
     }
     footer {
       background-color: #1a1a1a;
@@ -76,6 +101,13 @@
       text-align: center;
       padding: 20px;
       font-size: 0.9rem;
+    }
+    footer a {
+      color: #d4af37;
+      text-decoration: none;
+    }
+    footer a:hover {
+      text-decoration: underline;
     }
   </style>
 </head>
@@ -91,9 +123,9 @@
     </div>
   </div>
 
-  <div class="container">
-    <section class="features">
-      <h2>Property Features</h2>
+  <main class="container">
+    <section class="features" aria-labelledby="features-heading">
+      <h2 id="features-heading">Property Features</h2>
       <ul>
         <li>3 Spacious Bedrooms</li>
         <li>2 Bathrooms (1 Ensuite)</li>
@@ -107,18 +139,30 @@
       </ul>
     </section>
 
-    <section class="gallery">
-      <h2>Gallery</h2>
-      <img src="gallery1.jpg" alt="Living Room">
-      <img src="gallery2.jpg" alt="Kitchen">
-      <img src="gallery3.jpg" alt="Bedroom">
-      <img src="gallery4.jpg" alt="Bathroom">
+    <section class="gallery" aria-labelledby="gallery-heading">
+      <h2 id="gallery-heading">Gallery</h2>
+      <figure>
+        <img src="gallery1.jpg" alt="Living Room">
+        <figcaption>Living Room</figcaption>
+      </figure>
+      <figure>
+        <img src="gallery2.jpg" alt="Kitchen">
+        <figcaption>Kitchen</figcaption>
+      </figure>
+      <figure>
+        <img src="gallery3.jpg" alt="Bedroom">
+        <figcaption>Bedroom</figcaption>
+      </figure>
+      <figure>
+        <img src="gallery4.jpg" alt="Bathroom">
+        <figcaption>Bathroom</figcaption>
+      </figure>
     </section>
 
-    <section class="contact">
-      <h2>Contact Agent</h2>
-      <p>Desiree Bedhasie</p>
-      <p>Call: +27 83 447 3584</p>
+    <section class="contact" aria-labelledby="contact-heading">
+      <h2 id="contact-heading">Contact Agent</h2>
+      <p><strong>Agent:</strong> Desiree Bedhasie</p>
+      <p><strong>Call:</strong> <a href="tel:+27834473584">+27 83 447 3584</a></p>
       <p><a href="https://wa.me/+27834473584?text=I'm%20interested%20in%20the%20Cedar%20Acres%20property">WhatsApp the Agent</a></p>
     </section>
 
@@ -128,11 +172,10 @@
       <a href="#">MyProperty Listing</a>
       <a href="#">PropertyFox Listing</a>
     </div>
-  </div>
+  </main>
 
   <footer>
-    &copy; 2025 Cedar Acres Estate | Designed for Firzt Realty
+    &copy; 2025 Cedar Acres Estate | Designed for <a href="https://www.firzt.co.za/" target="_blank" rel="noopener">Firzt Realty</a>
   </footer>
-
 </body>
 </html>
