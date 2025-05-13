@@ -49,10 +49,14 @@ header {
   background-color: #333;
 }
 
-.gold-line {
+.gold-line,
+.gold-line-separator,
+.gold-line-footer {
   height: 4px;
   background: linear-gradient(to right, #d4af37, #fff8dc, #d4af37);
   border: none;
+  box-shadow: 0 0 10px gold;
+  margin: 20px 0;
 }
 
 .slider {
@@ -61,7 +65,7 @@ header {
   align-items: center;
   margin: 40px 0;
   position: relative;
-  perspective: 1000px;
+  flex-wrap: wrap;
 }
 
 .image-circle {
@@ -76,14 +80,14 @@ header {
 
 .image-circle.left,
 .image-circle.right {
-  width: 140px;
-  height: 140px;
+  width: 120px;
+  height: 120px;
   transform: rotateY(20deg);
 }
 
 .image-circle.center {
-  width: 320px;
-  height: 320px;
+  width: 280px;
+  height: 280px;
   transform: scale(1.1);
 }
 
@@ -95,20 +99,25 @@ header {
   color: #d4af37;
 }
 
-.info {
-  padding: 2rem;
-  animation: fadeInUp 1s ease-in-out;
+.property-card {
+  background: linear-gradient(145deg, #fff8dc, #d4af37);
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 5px 20px rgba(212, 175, 55, 0.4);
+  max-width: 100%;
+  color: #000;
 }
 
-.info ul {
+.property-card ul {
   list-style: none;
-  padding: 0;
+  padding-left: 0;
 }
 
 .agency-buttons a,
-.cta-button {
+.agency-button {
   display: inline-block;
-  margin: 10px;
+  width: 100%;
+  margin: 8px auto;
   background: linear-gradient(145deg, #fff8dc, #d4af37);
   border: none;
   padding: 10px 20px;
@@ -116,11 +125,18 @@ header {
   text-decoration: none;
   color: #000;
   box-shadow: 0 5px 15px rgba(212, 175, 55, 0.5);
+  text-align: center;
 }
 
 .cta-button {
   background-color: #25D366;
   color: white;
+  padding: 12px 20px;
+  text-decoration: none;
+  border-radius: 25px;
+  font-size: 16px;
+  margin-top: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
 footer {
@@ -136,13 +152,19 @@ footer {
   font-size: 1.5rem;
 }
 
-@keyframes fadeInUp {
-  0% {
-    opacity: 0;
-    transform: translateY(30px);
+@media (max-width: 768px) {
+  .image-circle.center {
+    width: 220px;
+    height: 220px;
   }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
+
+  .image-circle.left,
+  .image-circle.right {
+    width: 90px;
+    height: 90px;
+  }
+
+  .property-card {
+    margin: auto;
   }
 }
