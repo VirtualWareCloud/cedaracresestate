@@ -4,3 +4,128 @@
 [13/05/2025 22:16:26.73] 🔧 Initializing Git repository... 
 Initialized empty Git repository in C:/Users/thabo/Documents/VSCODE_PROJECTS/CEDARACRESESTATE/.git/
 [13/05/2025 22:16:26.73] ✅ Git initialized and remote added 
+warning: in the working copy of 'git_upload_log.txt', LF will be replaced by CRLF the next time Git touches it
+[13/05/2025 22:16:27.73] ✅ All files staged 
+[master (root-commit) e66183e] ­ƒÜÇ Initial upload of Cedar Acres Estate landing page (May 2025)
+ 110 files changed, 367 insertions(+)
+ create mode 100644 .vscode/extensions.json
+ create mode 100644 IMAGES/329025960.jpeg
+ create mode 100644 IMAGES/329025962.jpeg
+ create mode 100644 IMAGES/329025965.jpeg
+ create mode 100644 IMAGES/IMG-20250513-WA0005.jpg
+ create mode 100644 IMAGES/IMG-20250513-WA0007.jpg
+ create mode 100644 IMAGES/IMG-20250513-WA0025.jpg
+ create mode 100644 IMAGES/IMG-20250513-WA0027.jpg
+ create mode 100644 IMAGES/IMG-20250513-WA0034.jpg
+ create mode 100644 IMAGES/IMG-20250513-WA0035.jpg
+ create mode 100644 IMAGES/balcony1.jpg
+ create mode 100644 IMAGES/balcony2.jpg
+ create mode 100644 IMAGES/balcony3.jpg
+ create mode 100644 IMAGES/balcony4.jpg
+ create mode 100644 IMAGES/balcony5.jpg
+ create mode 100644 IMAGES/balcony6.jpg
+ create mode 100644 IMAGES/bath1.jpg
+ create mode 100644 IMAGES/bathroom01.jpeg
+ create mode 100644 IMAGES/bathroom02.jpeg
+ create mode 100644 IMAGES/bathroom03.jpeg
+ create mode 100644 IMAGES/bathroom1.jpg
+ create mode 100644 IMAGES/bathroom2.jpg
+ create mode 100644 IMAGES/bathroom3.jpg
+ create mode 100644 IMAGES/bathroom5.jpg
+ create mode 100644 IMAGES/bathroom6.jpg
+ create mode 100644 IMAGES/bathroom7.jpg
+ create mode 100644 IMAGES/bathroom8.jpg
+ create mode 100644 IMAGES/bathroom9.jpg
+ create mode 100644 IMAGES/bedroom03.jpeg
+ create mode 100644 IMAGES/bedroom04.jpeg
+ create mode 100644 IMAGES/bedroom06.jpeg
+ create mode 100644 IMAGES/bedroom1.jpeg
+ create mode 100644 IMAGES/bedroom1_view.jpg
+ create mode 100644 IMAGES/bedroom2.jpeg
+ create mode 100644 IMAGES/bedroom2_view.jpg
+ create mode 100644 IMAGES/bedroom3.jpg
+ create mode 100644 IMAGES/bedroom3_view.jpg
+ create mode 100644 IMAGES/bedroom4.jpg
+ create mode 100644 IMAGES/bedroom4_view.jpg
+ create mode 100644 IMAGES/bedroom5.jpg
+ create mode 100644 IMAGES/bedroom6.jpg
+ create mode 100644 IMAGES/bedroom8.jpg
+ create mode 100644 IMAGES/bedroom9.jpg
+ create mode 100644 IMAGES/covered_parking1.jpg
+ create mode 100644 IMAGES/covered_parking2.jpg
+ create mode 100644 IMAGES/desktop.ini
+ create mode 100644 IMAGES/doors.jpg
+ create mode 100644 IMAGES/doors2.jpg
+ create mode 100644 IMAGES/gallery17.jpeg
+ create mode 100644 IMAGES/gallery19.jpeg
+ create mode 100644 IMAGES/gallery20.jpeg
+ create mode 100644 IMAGES/gallery21.jpeg
+ create mode 100644 IMAGES/gallery22.jpeg
+ create mode 100644 IMAGES/gallery23.jpeg
+ create mode 100644 IMAGES/gallery24.jpeg
+ create mode 100644 IMAGES/gallery3.jpeg
+ create mode 100644 IMAGES/garden02.jpeg
+ create mode 100644 IMAGES/garden07.jpeg
+ create mode 100644 IMAGES/garden1.jpeg
+ create mode 100644 IMAGES/garden_view.jpg
+ create mode 100644 IMAGES/kitchen1.jpeg
+ create mode 100644 IMAGES/kitchen10.jpeg.jpg
+ create mode 100644 IMAGES/kitchen2.jpeg
+ create mode 100644 IMAGES/kitchen3.jpeg
+ create mode 100644 IMAGES/kitchen4.jpg
+ create mode 100644 IMAGES/kitchen5.jpg
+ create mode 100644 IMAGES/kitchen6.jpg
+ create mode 100644 IMAGES/kitchen7.jpg
+ create mode 100644 IMAGES/kitchen8.jpg
+ create mode 100644 IMAGES/kitchen9.jpg
+ create mode 100644 IMAGES/kitchen_living.jpg
+ create mode 100644 IMAGES/kitchen_living1.jpeg
+ create mode 100644 IMAGES/lights1.jpg
+ create mode 100644 IMAGES/lights2.jpg
+ create mode 100644 IMAGES/lights3.jpg
+ create mode 100644 IMAGES/lights5.jpg
+ create mode 100644 IMAGES/living01.jpeg
+ create mode 100644 IMAGES/living1.jpg
+ create mode 100644 IMAGES/living3.jpg
+ create mode 100644 IMAGES/living4.jpg
+ create mode 100644 IMAGES/living6.jpg
+ create mode 100644 IMAGES/living7.jpg
+ create mode 100644 IMAGES/living8.jpg
+ create mode 100644 IMAGES/main-image.jpeg
+ create mode 100644 IMAGES/mirror1.jpg
+ create mode 100644 IMAGES/mirror2.jpg
+ create mode 100644 IMAGES/mirror3.jpg
+ create mode 100644 IMAGES/passage1.jpeg
+ create mode 100644 IMAGES/passage2.jpg
+ create mode 100644 IMAGES/passage3.jpg
+ create mode 100644 IMAGES/passage4.jpg
+ create mode 100644 IMAGES/passage5.jpg
+ create mode 100644 IMAGES/passage6.jpg
+ create mode 100644 IMAGES/passage7.jpg
+ create mode 100644 IMAGES/shower1.jpg
+ create mode 100644 IMAGES/shower2.jpg
+ create mode 100644 IMAGES/stairs.jpg
+ create mode 100644 IMAGES/stairs2.jpg
+ create mode 100644 IMAGES/stairs3.jpg
+ create mode 100644 IMAGES/towel_hanger.jpg
+ create mode 100644 IMAGES/visitor_parking1.jpg
+ create mode 100644 IMAGES/visitor_parking2.jpg
+ create mode 100644 IMAGES/washingmachine-dishwasher.jpg
+ create mode 100644 git_upload_log.txt
+ create mode 100644 index.html
+ create mode 100644 main-image.jpeg
+ create mode 100644 push-to-github.bat
+ create mode 100644 push-to-github.ps1
+ create mode 100644 slider.js
+ create mode 100644 style.css
+[13/05/2025 22:16:28.01] ✅ Commit successful 
+[13/05/2025 22:16:28.12] 🔁 Switched to 'main' branch 
+To https://github.com/VirtualWareCloud/cedaracresestate.git
+ ! [rejected]        main -> main (fetch first)
+error: failed to push some refs to 'https://github.com/VirtualWareCloud/cedaracresestate.git'
+hint: Updates were rejected because the remote contains work that you do not
+hint: have locally. This is usually caused by another repository pushing to
+hint: the same ref. If you want to integrate the remote changes, use
+hint: 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+[13/05/2025 22:16:49.36] ❌ Push to GitHub failed 
