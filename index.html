@@ -13,7 +13,9 @@
 </head>
 <body>
   <header>
-    <div class="logo">LOGO HERE</div>
+    <div class="logo">
+      <img src="IMAGES/logo.png" alt="Cedar Acres Estate Logo" class="logo-img">
+    </div>
     <div class="hamburger" onclick="toggleMenu()"><i class="fas fa-bars"></i></div>
     <div class="menu" id="navMenu">
       <a href="#slider">Gallery</a>
@@ -28,7 +30,7 @@
   <section class="slider" id="slider">
     <div class="arrow left" onclick="prevSlide()">&#10094;</div>
     <div class="image-circle left" id="leftImg"></div>
-    <div class="image-circle center" id="mainImg"></div>
+    <div class="image-circle center" id="mainImg" onclick="openModal()"></div>
     <div class="image-circle right" id="rightImg"></div>
     <div class="arrow right" onclick="nextSlide()">&#10095;</div>
   </section>
@@ -40,6 +42,7 @@
       <div class="col-md-3 d-flex flex-column agency-buttons">
         <a href="https://www.property24.com" target="_blank">Property24</a>
         <a href="https://www.privateproperty.co.za" target="_blank">Private Property</a>
+        <a href="https://www.remax.co.za" target="_blank">RE/MAX</a>
       </div>
 
       <div class="col-md-6">
@@ -60,19 +63,11 @@
       <div class="col-md-3 d-flex flex-column agency-buttons">
         <a href="https://www.pamgolding.co.za" target="_blank">Pam Golding</a>
         <a href="https://www.rawson.co.za" target="_blank">Rawson</a>
+        <a href="#">New Agency</a>
       </div>
     </div>
 
-    <div class="row justify-content-center align-items-center g-2 mt-4">
-      <div class="col-6 col-md-3">
-        <a class="agency-button" href="https://www.remax.co.za" target="_blank">RE/MAX</a>
-      </div>
-      <div class="col-6 col-md-3">
-        <a class="agency-button" href="#">New Agency</a>
-      </div>
-    </div>
-
-    <div class="mt-3">
+    <div class="mt-4">
       <a class="cta-button" href="https://wa.me/27784899966" target="_blank">Book via WhatsApp</a>
     </div>
   </section>
@@ -88,6 +83,14 @@
       <a href="#"><i class="fab fa-linkedin"></i></a>
     </div>
   </footer>
+
+  <!-- Modal full-screen viewer -->
+  <div id="imageModal" class="modal" onclick="closeModal()">
+    <span class="modal-close">&times;</span>
+    <img class="modal-content" id="modalImg">
+    <div class="modal-nav left" onclick="prevSlide(event)">&#10094;</div>
+    <div class="modal-nav right" onclick="nextSlide(event)">&#10095;</div>
+  </div>
 
   <script src="script.js"></script>
 </body>
