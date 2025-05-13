@@ -37,14 +37,18 @@ function updateSlider() {
   document.getElementById("rightImg").style.backgroundImage = `url(${images[(currentIndex - 1 + images.length) % images.length]})`;
 }
 
-function nextSlide() {
+function nextSlide(event) {
+  if (event) event.stopPropagation();
   currentIndex = (currentIndex + 1) % images.length;
   updateSlider();
+  updateModalImage();
 }
 
-function prevSlide() {
+function prevSlide(event) {
+  if (event) event.stopPropagation();
   currentIndex = (currentIndex - 1 + images.length) % images.length;
   updateSlider();
+  updateModalImage();
 }
 
 function toggleMenu() {
@@ -52,31 +56,45 @@ function toggleMenu() {
   menu.style.display = menu.style.display === "flex" ? "none" : "flex";
 }
 
-// Touch gesture support
+// Touch support for slider
 let touchStartX = 0;
 let touchEndX = 0;
 
 const slider = document.getElementById("slider");
+if (slider) {
+  slider.addEventListener("touchstart", e => {
+    touchStartX = e.changedTouches[0].screenX;
+  });
 
-function handleGesture() {
-  if (touchEndX < touchStartX - 50) nextSlide();
-  if (touchEndX > touchStartX + 50) prevSlide();
+  slider.addEventListener("touchend", e => {
+    touchEndX = e.changedTouches[0].screenX;
+    if (touchEndX < touchStartX - 50) nextSlide();
+    if (touchEndX > touchStartX + 50) prevSlide();
+  });
+}
+
+// Modal viewer logic
+function openModal() {
+  const modal = document.getElementById("imageModal");
+  const modalImg = document.getElementById("modalImg");
+  modal.style.display = "block";
+  modalImg.src = images[currentIndex];
+}
+
+function closeModal() {
+  document.getElementById("imageModal").style.display = "none";
+}
+
+function updateModalImage() {
+  const modal = document.getElementById("imageModal");
+  const modalImg = document.getElementById("modalImg");
+  if (modal && modal.style.display === "block") {
+    modalImg.src = images[currentIndex];
+  }
 }
 
 document.addEventListener("DOMContentLoaded", () => {
   updateSlider();
-
-  const slider = document.getElementById("slider");
-  if (slider) {
-    slider.addEventListener("touchstart", e => {
-      touchStartX = e.changedTouches[0].screenX;
-    });
-
-    slider.addEventListener("touchend", e => {
-      touchEndX = e.changedTouches[0].screenX;
-      handleGesture();
-    });
-  }
 });
 
 setInterval(nextSlide, 3000);
