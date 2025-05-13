@@ -152,3 +152,20 @@ hint: See the 'Note about fast-forwards' in 'git push --help' for details.
 [13/05/2025 22:34:45.54] 🚀 Starting Git Upload Process 
 [13/05/2025 22:34:45.56] ✅ Navigated to C:\Users\thabo\Documents\VSCODE_PROJECTS\CEDARACRESESTATE 
 [13/05/2025 22:34:45.57] ℹ️ Git repository already initialized 
+warning: in the working copy of 'git_upload_log.txt', LF will be replaced by CRLF the next time Git touches it
+[13/05/2025 22:34:45.67] ✅ All files staged 
+[main 382e5d6] ­ƒÜÇ Auto-update: latest changes
+ 3 files changed, 53 insertions(+), 15 deletions(-)
+[13/05/2025 22:34:45.80] ✅ Commit successful 
+error: cannot pull with rebase: You have unstaged changes.
+error: Please commit or stash them.
+[13/05/2025 22:34:45.90] ⚠️ Pull failed or merge required 
+To https://github.com/VirtualWareCloud/cedaracresestate.git
+ ! [rejected]        main -> main (fetch first)
+error: failed to push some refs to 'https://github.com/VirtualWareCloud/cedaracresestate.git'
+hint: Updates were rejected because the remote contains work that you do not
+hint: have locally. This is usually caused by another repository pushing to
+hint: the same ref. If you want to integrate the remote changes, use
+hint: 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+[13/05/2025 22:34:47.24] ❌ Push to GitHub failed 
