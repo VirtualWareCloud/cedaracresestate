@@ -4,6 +4,7 @@
 [13/05/2025 22:16:26.73] 🔧 Initializing Git repository... 
 Initialized empty Git repository in C:/Users/thabo/Documents/VSCODE_PROJECTS/CEDARACRESESTATE/.git/
 [13/05/2025 22:16:26.73] ✅ Git initialized and remote added 
+<<<<<<< HEAD
 warning: in the working copy of 'git_upload_log.txt', LF will be replaced by CRLF the next time Git touches it
 [13/05/2025 22:16:27.73] ✅ All files staged 
 [master (root-commit) e66183e] ­ƒÜÇ Initial upload of Cedar Acres Estate landing page (May 2025)
@@ -169,3 +170,5 @@ hint: the same ref. If you want to integrate the remote changes, use
 hint: 'git pull' before pushing again.
 hint: See the 'Note about fast-forwards' in 'git push --help' for details.
 [13/05/2025 22:34:47.24] ❌ Push to GitHub failed 
+=======
+>>>>>>> e66183e (­ƒÜÇ Initial upload of Cedar Acres Estate landing page (May 2025))

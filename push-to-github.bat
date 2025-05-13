@@ -39,13 +39,18 @@ IF ERRORLEVEL 1 (
 )
 
 REM === COMMIT ===
+<<<<<<< HEAD
 git commit -m "🚀 Auto-update: latest changes" >> "%LOG_FILE%" 2>&1
+=======
+git commit -m "🚀 Initial upload of Cedar Acres Estate landing page (May 2025)" >> "%LOG_FILE%" 2>&1
+>>>>>>> e66183e (­ƒÜÇ Initial upload of Cedar Acres Estate landing page (May 2025))
 IF ERRORLEVEL 1 (
     echo [%DATE% %TIME%] ⚠️ No changes to commit or error occurred >> "%LOG_FILE%"
 ) ELSE (
     echo [%DATE% %TIME%] ✅ Commit successful >> "%LOG_FILE%"
 )
 
+<<<<<<< HEAD
 REM === SYNC WITH REMOTE ===
 git pull origin main --rebase >> "%LOG_FILE%" 2>&1
 IF ERRORLEVEL 1 (
@@ -53,6 +58,11 @@ IF ERRORLEVEL 1 (
 ) ELSE (
     echo [%DATE% %TIME%] 🔁 Pulled latest from remote main >> "%LOG_FILE%"
 )
+=======
+REM === SET MAIN BRANCH ===
+git branch -M main >> "%LOG_FILE%" 2>&1
+echo [%DATE% %TIME%] 🔁 Switched to 'main' branch >> "%LOG_FILE%"
+>>>>>>> e66183e (­ƒÜÇ Initial upload of Cedar Acres Estate landing page (May 2025))
 
 REM === PUSH TO REMOTE ===
 git push -u origin main >> "%LOG_FILE%" 2>&1
@@ -66,3 +76,7 @@ IF ERRORLEVEL 1 (
 )
 
 pause
+<<<<<<< HEAD
+=======
+
+>>>>>>> e66183e (­ƒÜÇ Initial upload of Cedar Acres Estate landing page (May 2025))
