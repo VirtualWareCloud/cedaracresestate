@@ -1,0 +1,148 @@
+body {
+  margin: 0;
+  background-color: #f5f5dc;
+  font-family: 'Segoe UI', sans-serif;
+  color: #d4af37;
+}
+
+header {
+  background-color: #000;
+  color: #d4af37;
+  padding: 1rem;
+  text-align: center;
+  position: relative;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.hamburger {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  cursor: pointer;
+  font-size: 1.5rem;
+  color: #d4af37;
+}
+
+.menu {
+  display: none;
+  flex-direction: column;
+  background-color: #111;
+  position: absolute;
+  top: 60px;
+  right: 10px;
+  z-index: 1000;
+  border: 1px solid #d4af37;
+}
+
+.menu a {
+  color: #d4af37;
+  padding: 10px;
+  text-decoration: none;
+  border-bottom: 1px solid #333;
+}
+
+.menu a:hover {
+  background-color: #333;
+}
+
+.gold-line {
+  height: 4px;
+  background: linear-gradient(to right, #d4af37, #fff8dc, #d4af37);
+  border: none;
+}
+
+.slider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 40px 0;
+  position: relative;
+  perspective: 1000px;
+}
+
+.image-circle {
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+  margin: 0 10px;
+  border: 4px solid #d4af37;
+  box-shadow: 0 0 20px rgba(212, 175, 55, 0.7);
+  transition: transform 0.6s ease-in-out;
+}
+
+.image-circle.left,
+.image-circle.right {
+  width: 140px;
+  height: 140px;
+  transform: rotateY(20deg);
+}
+
+.image-circle.center {
+  width: 320px;
+  height: 320px;
+  transform: scale(1.1);
+}
+
+.arrow {
+  font-size: 36px;
+  cursor: pointer;
+  user-select: none;
+  padding: 10px;
+  color: #d4af37;
+}
+
+.info {
+  padding: 2rem;
+  animation: fadeInUp 1s ease-in-out;
+}
+
+.info ul {
+  list-style: none;
+  padding: 0;
+}
+
+.agency-buttons a,
+.cta-button {
+  display: inline-block;
+  margin: 10px;
+  background: linear-gradient(145deg, #fff8dc, #d4af37);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 30px;
+  text-decoration: none;
+  color: #000;
+  box-shadow: 0 5px 15px rgba(212, 175, 55, 0.5);
+}
+
+.cta-button {
+  background-color: #25D366;
+  color: white;
+}
+
+footer {
+  background-color: #000;
+  color: #d4af37;
+  padding: 1rem;
+  text-align: center;
+}
+
+.social-icons a {
+  color: #d4af37;
+  margin: 0 10px;
+  font-size: 1.5rem;
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
