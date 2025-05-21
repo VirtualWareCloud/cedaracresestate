@@ -12,6 +12,7 @@ header {
   text-align: center;
   position: relative;
 }
+
 .whatsapp-fixed {
   position: absolute;
   top: 1rem;
@@ -27,13 +28,11 @@ header {
   transition: transform 0.2s ease;
 }
 
-/* Remove background completely for clean green icon */
 .whatsapp-fixed a:hover {
   color: #fff8dc;
   transform: scale(1.15);
 }
 
-/* Fix for mobile overlapping issues */
 @media (max-width: 768px) {
   .whatsapp-fixed {
     top: 0.8rem;
@@ -213,7 +212,9 @@ footer {
 }
 
 .circle-card-container {
-  background: linear-gradient(145deg, #fff8dc, #d4af37);
+  background: linear-gradient(-45deg, #fff8dc, #d4af37, #fff8dc, #d4af37);
+  background-size: 400% 400%;
+  animation: moveGradient 8s ease infinite;
   border-radius: 30px;
   box-shadow: 0 8px 20px rgba(212, 175, 55, 0.5), inset 0 0 10px #fff8dc;
   padding: 30px 15px;
@@ -223,6 +224,12 @@ footer {
   justify-content: center;
   align-items: center;
   overflow: visible;
+}
+
+@keyframes moveGradient {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
 }
 
 .click-hint {
@@ -245,7 +252,6 @@ footer {
   margin-top: 2px;
 }
 
-/* Responsive Styles */
 @media (max-width: 768px) {
   .image-circle.center {
     width: 220px;
@@ -320,12 +326,11 @@ footer {
   }
 
   .click-hint {
-    top: -2px; /* ✅ Final mobile fix */
+    top: -2px;
     font-size: 10px;
   }
 }
 
-/* Modal Styles */
 .modal {
   display: none;
   position: fixed;
