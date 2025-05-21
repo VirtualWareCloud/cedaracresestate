@@ -76,6 +76,8 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
+  padding-top: 40px; /* Ensure space for hint above */
 }
 
 /* Image styles */
@@ -312,6 +314,7 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow: visible; /* ✅ ensures .click-hint is not clipped */
 }
 
 /* Hint Above Center Circle */
