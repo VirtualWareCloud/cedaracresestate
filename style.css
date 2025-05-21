@@ -212,18 +212,28 @@ footer {
 }
 
 .circle-card-container {
-  background: linear-gradient(-45deg, #fff8dc, #d4af37, #fff8dc, #d4af37);
-  background-size: 400% 400%;
-  animation: moveGradient 8s ease infinite;
+  background: linear-gradient(145deg, #fff8dc, #d4af37);
   border-radius: 30px;
   box-shadow: 0 8px 20px rgba(212, 175, 55, 0.5), inset 0 0 10px #fff8dc;
   padding: 30px 15px;
   margin: 40px auto;
-  max-width: 95vw;
+  width: 100%;
+  max-width: 600px; /* Restrict max width */
   display: flex;
   justify-content: center;
   align-items: center;
   overflow: visible;
+}
+
+/* Ensures consistent horizontal spacing with buttons on smaller screens */
+@media (max-width: 480px) {
+  .circle-card-container {
+    padding: 20px 10px;
+    margin: 20px auto;
+    width: 90vw;          /* Ensures width matches button alignment */
+    max-width: 90vw;      /* Prevents overflow */
+    border-radius: 20px;
+  }
 }
 
 @keyframes moveGradient {
