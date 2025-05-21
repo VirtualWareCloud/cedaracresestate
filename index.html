@@ -13,15 +13,17 @@
 </head>
 <body>
   <header>
-<div class="whatsapp-icon">
-  <a href="https://wa.me/27784899966" target="_blank">
-    <i class="fab fa-whatsapp"></i>
-  </a>
-</div>
-
     <div class="logo">
       <img src="IMAGES/logo.png" alt="Cedar Acres Estate Logo" class="logo-img">
     </div>
+
+    <!-- ✅ WhatsApp icon added -->
+    <div class="whatsapp-icon">
+      <a href="https://wa.me/27784899966" target="_blank" aria-label="Chat on WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+      </a>
+    </div>
+
     <div class="hamburger" onclick="toggleMenu()"><i class="fas fa-bars"></i></div>
     <div class="menu" id="navMenu">
       <a href="#slider">Gallery</a>
@@ -37,12 +39,10 @@
     <section class="slider" id="slider">
       <div class="arrow left" onclick="prevSlide()">&#10094;</div>
       <div class="image-circle left" id="leftImg"></div>
-
       <div class="main-circle-wrapper">
         <div class="click-hint">click to view<br><span class="arrow-down">↓</span></div>
         <div class="image-circle center" id="mainImg" onclick="openModal()"></div>
       </div>
-
       <div class="image-circle right" id="rightImg"></div>
       <div class="arrow right" onclick="nextSlide()">&#10095;</div>
     </section>
