@@ -70,35 +70,14 @@ header {
   flex-wrap: wrap;
 }
 
-/* Main Circle Image & Hint Wrapper */
+/* Wrapper for center image + hint */
 .main-circle-wrapper {
   position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding-top: 30px;
-}
-
-/* Hint Above Center Circle */
-.click-hint {
-  position: absolute;
-  top: -28px;
-  left: 50%;
-  transform: translateX(-50%);
-  text-align: center;
-  font-size: 13px;
-  font-weight: 600;
-  color: #000;
-  opacity: 0.9;
-  pointer-events: none;
-  z-index: 10;
-}
-
-.arrow-down {
-  font-size: 16px;
-  display: block;
-  margin-top: 1px;
+  padding-top: 40px;
 }
 
 .image-circle {
@@ -195,7 +174,6 @@ footer {
   padding: 1rem;
   text-align: center;
 }
-
 .social-icons a {
   color: #d4af37;
   margin: 0 10px;
@@ -229,8 +207,8 @@ footer {
   }
 
   .click-hint {
+    top: -20px;
     font-size: 11px;
-    top: -25px;
   }
 }
 
@@ -277,7 +255,7 @@ footer {
   }
 
   .click-hint {
-    top: -20px;
+    top: -15px;
     font-size: 10px;
   }
 }
@@ -329,6 +307,7 @@ footer {
   to { transform: scale(1); opacity: 1; }
 }
 
+/* Circle card container */
 .circle-card-container {
   background: linear-gradient(145deg, #fff8dc, #d4af37);
   border-radius: 30px;
@@ -340,4 +319,24 @@ footer {
   justify-content: center;
   align-items: center;
   overflow: visible;
+}
+
+/* Hint text */
+.click-hint {
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  font-size: 12px;
+  font-weight: 600;
+  color: #000;
+  opacity: 0.9;
+  pointer-events: none;
+  z-index: 10;
+}
+.arrow-down {
+  font-size: 14px;
+  display: block;
+  margin-top: 2px;
 }
