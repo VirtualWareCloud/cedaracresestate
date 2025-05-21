@@ -56,24 +56,6 @@ function toggleMenu() {
   menu.style.display = menu.style.display === "flex" ? "none" : "flex";
 }
 
-// Touch support for slider
-let touchStartX = 0;
-let touchEndX = 0;
-
-const slider = document.getElementById("slider");
-if (slider) {
-  slider.addEventListener("touchstart", e => {
-    touchStartX = e.changedTouches[0].screenX;
-  });
-
-  slider.addEventListener("touchend", e => {
-    touchEndX = e.changedTouches[0].screenX;
-    if (touchEndX < touchStartX - 50) nextSlide();
-    if (touchEndX > touchStartX + 50) prevSlide();
-  });
-}
-
-// Modal viewer logic
 function openModal() {
   const modal = document.getElementById("imageModal");
   const modalImg = document.getElementById("modalImg");
@@ -95,6 +77,43 @@ function updateModalImage() {
 
 document.addEventListener("DOMContentLoaded", () => {
   updateSlider();
+
+  // Share button functionality
+  const shareButton = document.getElementById("shareButton");
+  if (shareButton && navigator.share) {
+    shareButton.addEventListener("click", async () => {
+      try {
+        await navigator.share({
+          title: "3 Bed Apartment in Cedar Acres",
+          text: "Check out this stunning apartment in Fourways!",
+          url: window.location.href
+        });
+      } catch (err) {
+        console.error("Share failed:", err.message);
+      }
+    });
+  } else if (shareButton) {
+    // Hide the share button if not supported
+    shareButton.style.display = "none";
+  }
 });
 
+// Touch support for slider
+let touchStartX = 0;
+let touchEndX = 0;
+
+const slider = document.getElementById("slider");
+if (slider) {
+  slider.addEventListener("touchstart", e => {
+    touchStartX = e.changedTouches[0].screenX;
+  });
+
+  slider.addEventListener("touchend", e => {
+    touchEndX = e.changedTouches[0].screenX;
+    if (touchEndX < touchStartX - 50) nextSlide();
+    if (touchEndX > touchStartX + 50) prevSlide();
+  });
+}
+
+// Auto-rotate slides every 3 seconds
 setInterval(nextSlide, 3000);
