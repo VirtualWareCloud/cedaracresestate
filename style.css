@@ -22,21 +22,29 @@ header {
 .whatsapp-fixed a {
   color: #25D366;
   font-size: 1.8rem;
-  background: #fff;
   border-radius: 50%;
-  padding: 10px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
   display: inline-block;
-  transition: transform 0.2s ease, background 0.2s ease;
+  transition: transform 0.2s ease;
 }
 
+/* Remove background completely for clean green icon */
 .whatsapp-fixed a:hover {
-  background: #25D366;
-  color: #fff;
-  transform: scale(1.1);
+  color: #128C7E;
+  transform: scale(1.15);
 }
 
+/* Fix for mobile overlapping issues */
+@media (max-width: 768px) {
+  .whatsapp-fixed {
+    top: 0.8rem;
+    left: 0.8rem;
+  }
 
+  .whatsapp-fixed a {
+    background: none !important;
+    padding: 0;
+  }
+}
 
 .logo-img {
   max-height: 50px;
