@@ -99,10 +99,12 @@ header {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  max-width: 1000px;
   width: 100%;
+  max-width: 100%;
   margin: auto;
+  box-sizing: border-box;
 }
+
 
 .main-circle-wrapper {
   position: relative;
@@ -214,7 +216,8 @@ footer {
 }
 
 .circle-card-container {
-  width: 100vw;
+  width: 100%;
+  max-width: 100%;
   padding: 60px 20px;
   margin: 0 auto;
   background: linear-gradient(145deg, #fff8dc, #d4af37);
@@ -226,16 +229,18 @@ footer {
   align-items: center;
 }
 
-/* Ensures consistent horizontal spacing with buttons on smaller screens */
+/* Mobile responsiveness */
 @media (max-width: 480px) {
   .circle-card-container {
-    padding: 20px 10px;
-    margin: 20px auto;
-    width: 90vw;          /* Ensures width matches button alignment */
-    max-width: 90vw;      /* Prevents overflow */
+    width: 100%;
+    max-width: 100%;
+    padding: 20px 16px;
+    margin: 0 auto 20px auto;
     border-radius: 20px;
+    box-sizing: border-box;
   }
 }
+
 
 @keyframes moveGradient {
   0% { background-position: 0% 50%; }
