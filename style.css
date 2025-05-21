@@ -29,7 +29,7 @@ header {
 
 /* Remove background completely for clean green icon */
 .whatsapp-fixed a:hover {
-  color: #128C7E;
+  color: #fff8dc;
   transform: scale(1.15);
 }
 
