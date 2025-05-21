@@ -12,6 +12,25 @@ header {
   text-align: center;
   position: relative;
 }
+.whatsapp-icon {
+  position: absolute;
+  top: 1rem;
+  right: 3.5rem; /* Positioned to the left of the hamburger */
+  font-size: 1.5rem;
+  color: #25D366;
+  z-index: 999;
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.whatsapp-icon:hover {
+  color: #1ebe5b;
+  transform: scale(1.2);
+}
+
+.whatsapp-icon i {
+  display: inline-block;
+}
+
 
 .logo-img {
   max-height: 50px;
