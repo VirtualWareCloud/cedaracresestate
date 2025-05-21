@@ -13,12 +13,12 @@
 </head>
 <body>
 <header>
- <div class="whatsapp-fixed">
-  <a href="https://wa.me/27784899966" target="_blank" aria-label="Chat on WhatsApp">
-    <i class="fab fa-whatsapp"></i>
-  </a>
-</div>
- <div class="logo">
+  <div class="whatsapp-fixed">
+    <a href="https://wa.me/27784899966" target="_blank" aria-label="Chat on WhatsApp">
+      <i class="fab fa-whatsapp"></i>
+    </a>
+  </div>
+  <div class="logo">
     <img src="IMAGES/logo.png" alt="Cedar Acres Estate Logo" class="logo-img">
   </div>
   <div class="hamburger" onclick="toggleMenu()"><i class="fas fa-bars"></i></div>
@@ -28,82 +28,108 @@
     <a href="https://wa.me/27784899966" target="_blank">WhatsApp</a>
     <a href="#footer">Contact</a>
   </div>
-  
 </header>
 
+<hr class="gold-line" />
 
-  <hr class="gold-line" />
-
-  <div class="circle-card-container">
-    <section class="slider" id="slider">
-      <div class="arrow left" onclick="prevSlide()">&#10094;</div>
-      <div class="image-circle left" id="leftImg"></div>
-      <div class="main-circle-wrapper">
-        <div class="click-hint">click to view<br><span class="arrow-down">↓</span></div>
-        <div class="image-circle center" id="mainImg" onclick="openModal()"></div>
-      </div>
-      <div class="image-circle right" id="rightImg"></div>
-      <div class="arrow right" onclick="nextSlide()">&#10095;</div>
-    </section>
-  </div>
-
-  <hr class="gold-line gold-line-separator" />
-
-  <section class="info-layout container text-center" id="info">
-    <div class="row justify-content-center align-items-start g-4">
-      <div class="col-md-3 d-flex flex-column agency-buttons">
-        <a href="https://www.property24.com" target="_blank">Property24</a>
-        <a href="https://www.privateproperty.co.za" target="_blank">Private Property</a>
-        <a href="https://www.remax.co.za" target="_blank">RE/MAX</a>
-      </div>
-
-      <div class="col-md-6">
-        <div class="property-card text-start mx-auto">
-          <p><strong>Price:</strong> R1,750,000</p>
-          <p><strong>Property Features:</strong></p>
-          <ul>
-            <li>3 Bedrooms, 1 Bathroom</li>
-            <li>1 Single Storage Garage</li>
-            <li>153 m², 1st-floor unit</li>
-            <li>Designer finishes, Caesarstone tops</li>
-            <li>Large balcony, pool, tennis court, clubhouse</li>
-            <li>24-hour security</li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="col-md-3 d-flex flex-column agency-buttons">
-        <a href="https://www.pamgolding.co.za" target="_blank">Pam Golding</a>
-        <a href="https://www.rawson.co.za" target="_blank">Rawson</a>
-        <a href="#">New Agency</a>
-      </div>
+<div class="circle-card-container animated-gradient">
+  <section class="slider" id="slider">
+    <div class="arrow left" onclick="prevSlide()">&#10094;</div>
+    <div class="image-circle left" id="leftImg"></div>
+    <div class="main-circle-wrapper">
+      <div class="click-hint">click to view<br><span class="arrow-down">↓</span></div>
+      <div class="image-circle center" id="mainImg" onclick="openModal()"></div>
     </div>
-
-    <div class="mt-4">
-      <a class="cta-button" href="https://wa.me/27784899966" target="_blank">Book via WhatsApp</a>
-    </div>
+    <div class="image-circle right" id="rightImg"></div>
+    <div class="arrow right" onclick="nextSlide()">&#10095;</div>
   </section>
+</div>
 
-  <hr class="gold-line gold-line-footer" />
+<hr class="gold-line gold-line-separator" />
 
-  <footer id="footer">
-    <p>© 2025 Cedar Acres Estate Properties. All Rights Reserved.</p>
-    <div class="social-icons">
-      <a href="#"><i class="fab fa-facebook"></i></a>
-      <a href="#"><i class="fab fa-instagram"></i></a>
-      <a href="#"><i class="fab fa-twitter"></i></a>
-      <a href="#"><i class="fab fa-linkedin"></i></a>
+<section class="info-layout container text-center" id="info">
+  <div class="row justify-content-center align-items-start g-4">
+    <div class="col-md-3 d-flex flex-column agency-buttons">
+      <a href="https://www.property24.com" target="_blank">Property24</a>
+      <a href="https://www.privateproperty.co.za" target="_blank">Private Property</a>
+      <a href="https://www.remax.co.za" target="_blank">RE/MAX</a>
     </div>
-  </footer>
 
-  <!-- Modal full-screen viewer -->
-  <div id="imageModal" class="modal" onclick="closeModal()">
-    <span class="modal-close">&times;</span>
-    <img class="modal-content" id="modalImg">
-    <div class="modal-nav left" onclick="prevSlide(event)">&#10094;</div>
-    <div class="modal-nav right" onclick="nextSlide(event)">&#10095;</div>
+    <div class="col-md-6">
+      <div class="property-card text-start mx-auto">
+        <p><strong>Price:</strong> R1,750,000</p>
+        <p><strong>Property Features:</strong></p>
+        <ul>
+          <li>3 Bedrooms, 1 Bathroom</li>
+          <li>1 Single Storage Garage</li>
+          <li>153 m², 1st-floor unit</li>
+          <li>Designer finishes, Caesarstone tops</li>
+          <li>Large balcony, pool, tennis court, clubhouse</li>
+          <li>24-hour security</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="col-md-3 d-flex flex-column agency-buttons">
+      <a href="https://www.pamgolding.co.za" target="_blank">Pam Golding</a>
+      <a href="https://www.rawson.co.za" target="_blank">Rawson</a>
+      <a href="#">New Agency</a>
+    </div>
   </div>
 
-  <script src="script.js"></script>
+  <div class="mt-4 d-flex flex-column flex-md-row justify-content-center align-items-center gap-3">
+    <a class="agency-button" href="https://wa.me/27784899966" target="_blank">Book via WhatsApp</a>
+    <a class="agency-button" href="mailto:a.phaahla@telkomsa.net">Email Agent</a>
+    <button class="agency-button" onclick="shareProperty()">Share Property</button>
+  </div>
+</section>
+
+<hr class="gold-line gold-line-footer" />
+
+<footer id="footer">
+  <p>© 2025 Cedar Acres Estate Properties. All Rights Reserved.</p>
+  <div class="social-icons">
+    <a href="#"><i class="fab fa-facebook"></i></a>
+    <a href="#"><i class="fab fa-instagram"></i></a>
+    <a href="#"><i class="fab fa-twitter"></i></a>
+    <a href="#"><i class="fab fa-linkedin"></i></a>
+  </div>
+</footer>
+
+<!-- Modal full-screen viewer -->
+<div id="imageModal" class="modal" onclick="closeModal()">
+  <span class="modal-close">&times;</span>
+  <img class="modal-content" id="modalImg">
+  <div class="modal-nav left" onclick="prevSlide(event)">&#10094;</div>
+  <div class="modal-nav right" onclick="nextSlide(event)">&#10095;</div>
+</div>
+
+<script>
+function toggleMenu() {
+  document.getElementById("navMenu").classList.toggle("show");
+}
+
+function openModal() {
+  document.getElementById("imageModal").style.display = "block";
+  const img = document.getElementById("mainImg").style.backgroundImage;
+  document.getElementById("modalImg").src = img.replace('url("', '').replace('")', '');
+}
+
+function closeModal() {
+  document.getElementById("imageModal").style.display = "none";
+}
+
+function shareProperty() {
+  if (navigator.share) {
+    navigator.share({
+      title: 'Cedar Acres Property',
+      text: 'Check out this 3-bedroom apartment at Cedar Acres Estate!',
+      url: window.location.href
+    }).catch(console.error);
+  } else {
+    alert("Sharing not supported on this device. Copy the URL to share.");
+  }
+}
+</script>
 </body>
 </html>
