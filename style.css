@@ -238,3 +238,64 @@ footer {
   from { transform: scale(0.6); opacity: 0; }
   to { transform: scale(1); opacity: 1; }
 }
+.circle-card-container {
+  background: #111;
+  border-radius: 30px;
+  box-shadow: 0 12px 40px rgba(0,0,0,0.5), 0 2px 16px #d4af37 inset;
+  padding: 30px 15px;
+  margin: 40px auto;
+  max-width: 95vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  .circle-card-container {
+    padding: 15px 5px;
+    margin: 20px 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .slider {
+    flex-direction: column;
+    margin: 20px 0;
+  }
+
+  .image-circle.center {
+    width: 150px;
+    height: 150px;
+  }
+
+  .image-circle.left,
+  .image-circle.right {
+    width: 60px;
+    height: 60px;
+  }
+
+  .property-card,
+  .gold-line,
+  .gold-line-separator,
+  .gold-line-footer {
+    margin: 10px 0;
+    padding: 10px;
+  }
+
+  .cta-button {
+    width: 100%;
+    font-size: 14px;
+    padding: 10px 0;
+  }
+
+  header,
+  footer {
+    padding: 0.5rem;
+    font-size: 0.95rem;
+  }
+
+  .modal-content {
+    max-width: 98vw;
+    max-height: 70vh;
+  }
+}
