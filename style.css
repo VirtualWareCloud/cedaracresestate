@@ -70,14 +70,13 @@ header {
   flex-wrap: wrap;
 }
 
-/* Wrapper for center image + hint */
 .main-circle-wrapper {
   position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding-top: 40px;
+  padding-top: 20px; /* Adjusted for better spacing */
 }
 
 .image-circle {
@@ -180,6 +179,39 @@ footer {
   font-size: 1.5rem;
 }
 
+.circle-card-container {
+  background: linear-gradient(145deg, #fff8dc, #d4af37);
+  border-radius: 30px;
+  box-shadow: 0 8px 20px rgba(212, 175, 55, 0.5), inset 0 0 10px #fff8dc;
+  padding: 30px 15px;
+  margin: 40px auto;
+  max-width: 95vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: visible;
+}
+
+.click-hint {
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  font-size: 12px;
+  font-weight: 600;
+  color: #000;
+  opacity: 0.9;
+  pointer-events: none;
+  z-index: 10;
+}
+
+.arrow-down {
+  font-size: 14px;
+  display: block;
+  margin-top: 2px;
+}
+
 /* Responsive Styles */
 @media (max-width: 768px) {
   .image-circle.center {
@@ -207,7 +239,7 @@ footer {
   }
 
   .click-hint {
-    top: -20px;
+    top: -18px;
     font-size: 11px;
   }
 }
@@ -255,7 +287,7 @@ footer {
   }
 
   .click-hint {
-    top: -15px;
+    top: -12px;
     font-size: 10px;
   }
 }
@@ -305,38 +337,4 @@ footer {
 @keyframes zoomIn {
   from { transform: scale(0.6); opacity: 0; }
   to { transform: scale(1); opacity: 1; }
-}
-
-/* Circle card container */
-.circle-card-container {
-  background: linear-gradient(145deg, #fff8dc, #d4af37);
-  border-radius: 30px;
-  box-shadow: 0 8px 20px rgba(212, 175, 55, 0.5), inset 0 0 10px #fff8dc;
-  padding: 30px 15px;
-  margin: 40px auto;
-  max-width: 95vw;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow: visible;
-}
-
-/* Hint text */
-.click-hint {
-  position: absolute;
-  top: -30px;
-  left: 50%;
-  transform: translateX(-50%);
-  text-align: center;
-  font-size: 12px;
-  font-weight: 600;
-  color: #000;
-  opacity: 0.9;
-  pointer-events: none;
-  z-index: 10;
-}
-.arrow-down {
-  font-size: 14px;
-  display: block;
-  margin-top: 2px;
 }
