@@ -70,17 +70,37 @@ header {
   flex-wrap: wrap;
 }
 
-/* Center image wrapper for proper hint positioning */
+/* Main Circle Image & Hint Wrapper */
 .main-circle-wrapper {
   position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding-top: 40px; /* Ensure space for hint above */
+  padding-top: 30px;
 }
 
-/* Image styles */
+/* Hint Above Center Circle */
+.click-hint {
+  position: absolute;
+  top: -28px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  font-size: 13px;
+  font-weight: 600;
+  color: #000;
+  opacity: 0.9;
+  pointer-events: none;
+  z-index: 10;
+}
+
+.arrow-down {
+  font-size: 16px;
+  display: block;
+  margin-top: 1px;
+}
+
 .image-circle {
   border-radius: 50%;
   background-size: cover;
@@ -105,7 +125,6 @@ header {
   cursor: pointer;
 }
 
-/* Arrows */
 .arrow {
   font-size: 36px;
   cursor: pointer;
@@ -114,7 +133,6 @@ header {
   color: #b8860b;
 }
 
-/* Property Info Card */
 .property-card {
   background: linear-gradient(145deg, #fff8dc, #d4af37);
   padding: 20px;
@@ -129,7 +147,6 @@ header {
   padding-left: 0;
 }
 
-/* Agency buttons */
 .agency-buttons a,
 .agency-button {
   display: inline-block;
@@ -154,7 +171,6 @@ header {
   transform: scale(0.95);
 }
 
-/* WhatsApp Button */
 .cta-button {
   background-color: #25D366;
   color: white;
@@ -173,13 +189,13 @@ header {
   transform: scale(0.95);
 }
 
-/* Footer */
 footer {
   background-color: #000;
   color: #d4af37;
   padding: 1rem;
   text-align: center;
 }
+
 .social-icons a {
   color: #d4af37;
   margin: 0 10px;
@@ -210,6 +226,11 @@ footer {
   .circle-card-container {
     padding: 15px 5px;
     margin: 20px 0;
+  }
+
+  .click-hint {
+    font-size: 11px;
+    top: -25px;
   }
 }
 
@@ -253,6 +274,11 @@ footer {
   .modal-content {
     max-width: 98vw;
     max-height: 70vh;
+  }
+
+  .click-hint {
+    top: -20px;
+    font-size: 10px;
   }
 }
 
@@ -303,7 +329,6 @@ footer {
   to { transform: scale(1); opacity: 1; }
 }
 
-/* Container Card */
 .circle-card-container {
   background: linear-gradient(145deg, #fff8dc, #d4af37);
   border-radius: 30px;
@@ -314,25 +339,5 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  overflow: visible; /* ✅ ensures .click-hint is not clipped */
-}
-
-/* Hint Above Center Circle */
-.click-hint {
-  position: absolute;
-  top: -30px;
-  left: 50%;
-  transform: translateX(-50%);
-  text-align: center;
-  font-size: 12px;
-  font-weight: 600;
-  color: #000;
-  opacity: 0.9;
-  pointer-events: none;
-  z-index: 10;
-}
-.arrow-down {
-  font-size: 14px;
-  display: block;
-  margin-top: 2px;
+  overflow: visible;
 }
