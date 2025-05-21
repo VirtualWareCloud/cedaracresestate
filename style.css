@@ -216,20 +216,14 @@ footer {
   border-radius: 30px;
   box-shadow: 0 8px 20px rgba(212, 175, 55, 0.5), inset 0 0 10px #fff8dc;
   padding: 30px 15px;
-  margin: 40px auto; /* Centers horizontally */
+  margin: 40px auto;
   width: 100%;
-  max-width: 600px;
-  box-sizing: border-box; /* Ensures padding doesn't break layout */
+  max-width: 600px; /* Restrict max width */
   display: flex;
   justify-content: center;
   align-items: center;
   overflow: visible;
 }
-
-
-
-
-
 /* Ensures consistent horizontal spacing with buttons on smaller screens */
 @media (max-width: 480px) {
   .circle-card-container {
