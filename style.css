@@ -299,3 +299,22 @@ footer {
     max-height: 70vh;
   }
 }
+.click-hint {
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  font-size: 12px;
+  font-weight: 500;
+  color: #111;
+  opacity: 0.8;
+  pointer-events: none;
+  z-index: 10;
+}
+
+.arrow-down {
+  font-size: 14px;
+  display: block;
+  margin-top: 2px;
+}
