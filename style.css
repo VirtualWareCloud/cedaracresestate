@@ -239,9 +239,9 @@ footer {
   to { transform: scale(1); opacity: 1; }
 }
 .circle-card-container {
-  background: #111;
+  background: linear-gradient(145deg, #fff8dc, #d4af37);
   border-radius: 30px;
-  box-shadow: 0 12px 40px rgba(0,0,0,0.5), 0 2px 16px #d4af37 inset;
+  box-shadow: 0 8px 20px rgba(212, 175, 55, 0.5), inset 0 0 10px #fff8dc;
   padding: 30px 15px;
   margin: 40px auto;
   max-width: 95vw;
