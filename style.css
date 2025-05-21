@@ -76,7 +76,7 @@ header {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding-top: 20px; /* Adjusted for better spacing */
+  padding-top: 20px;
 }
 
 .image-circle {
@@ -287,7 +287,7 @@ footer {
   }
 
   .click-hint {
-    top: -12px;
+    top: -8px; /* ✅ Final mobile fix */
     font-size: 10px;
   }
 }
